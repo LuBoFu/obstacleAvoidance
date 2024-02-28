@@ -1,0 +1,32 @@
+# Index file of the KITTI Raw dataset, which contains the point clouds
+--kittiRawIndex        /sw/cv/exp/kittiRawIndex/kittiRawIndex.h5
+
+# The output directory which will store the filtered point clouds.
+--kittiRawFilteredDir  /sw/cv/exp/kittiRawFiltered
+
+# Points whose depth exceeds the following limit will be removed.
+# Unit of all the lengths is in meter.
+--distanceLimit  50
+
+# Height of the camera relative to the ground.
+--cameraHeight   1.65
+
+# Points whose heights beyong the following range will be cropped.
+--heightRangeCroppingLimits  0.1  3
+
+# Size of each grid for the voxel grid algorithm.
+--leafSize  0.1 
+
+# Search radius of the outlier removal algorithm.
+--outlierRemovalSearchRadius  1
+
+# minimum number of neighbors of the outlier removal algorithm.
+--outlierRemovalMinNeighbors  2
+
+# The following options are for debug only.
+# If the following option is set, only process the specified input sequence.
+#--targetSequence  0
+
+# The following option is valid only when the previous one is set.
+# If set, specify how many leading frames of the target sequence will be processed.
+#--numberOfFramesToProcess 10

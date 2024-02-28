@@ -1,0 +1,2 @@
+# This program reads options from config/peopleDetectionConfig.txt
+bin/personDetection

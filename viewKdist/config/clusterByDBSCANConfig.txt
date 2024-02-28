@@ -1,0 +1,17 @@
+# The input directory which stores the filtered point clouds.
+--kittiRawFilteredDir  /sw/cv/exp/kittiRawFiltered
+
+# The output directory which will store the clustered result.
+--clustersDir   /sw/cv/exp/clusters
+
+# If the following option presents, the program only generate the 
+# k-dist graph.
+--onlyGenerateKDistData
+
+# The following options are for debug only.
+# If the following option is set, only process the specified input sequence.
+# --targetSequence  0
+
+# The following option is valid only when the previous one is set.
+# If set, specify how many leading frames of the target sequence will be processed.
+# --numberOfFramesToProcess 1

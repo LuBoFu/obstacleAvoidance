@@ -1,0 +1,6 @@
+bin/generateDepthHDF5  \
+    --depthSequencePathList  inputData/depthSequencePaths.txt  \
+    --rawSequencePathList    inputData/rawPaths.txt   \
+    --KITTIDatabasesRootDir  /sw/cv/dbase             \
+    --outputFilename         /sw/cv/exp/depthGT/depth.h5
+

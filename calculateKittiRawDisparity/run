@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# 前提条件：已经在sw机器上设置好conda/pytorch运行环境
+
+python3 calculateKittiRawDisparity.py   \
+    --restore_ckpt   ./pretrained_models/kitti/kitti15.pth             \
+    --kittiRawIndex  /sw/cv/exp/kittiRawIndex/kittiRawIndex.h5         \
+    --outputDir      /sw/cv/exp/kittiRawDisparity
+

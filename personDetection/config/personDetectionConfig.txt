@@ -1,0 +1,39 @@
+# The input directory which stores the filtered point clouds.
+--kittiRawFilteredDir  /sw/cv/exp/kittiRawFiltered
+
+# The output directory which will store the clustered result.
+--detectedPersonDir   /sw/cv/exp/detectedPerson
+
+# proto and parameters of the neural network model
+--modelProto          model/MobileNetSSD_deploy.prototxt
+--modelParameters     model/MobileNetSSD_deploy.caffemodel
+
+# SSD network has two versions: one with input dimension 300x300, another one with 500x500.
+--SSDImageWidth   300
+--SSDImageHeight  300
+
+# Given a detected person by the SSD network in a image block, only when its confidence exceeds the following 
+# threshold, will it be included in the final detected result of that image block.
+--confidenceThresholdForPerson 0.7
+
+# An operation of NMS is applied when merging the bounding boxes of all image blocks. 
+# The option below specifies the IoU threshold for this operation.
+--IoUThresholdForNMS  0.6
+
+# ==================
+# The following options are for debug only.
+# If set, this program only process the testing sample image file, then it exits.
+#--processSampleImageOnly
+
+# If the above option is set, the following option points to a testing sample file, which is 
+# taken from https://github.com/djmv/MobilNet_SSD_opencv.  Original name of the file is "img.jpeg".
+#--sampleImagePath    samples/MobilNet_SSD_opencv.jpeg
+
+# If the following option is set, only process the specified scene.
+#--targetScene  Person
+
+# If set, specify maximally how many sequences will be processed
+#--numberOfSequencesToProcess   2
+
+# If set, specify how many leading frames of each sequence will be processed.
+#--numberOfLeadingFramesToProcess   20

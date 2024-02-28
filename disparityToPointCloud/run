@@ -1,0 +1,3 @@
+bin/disparityToPointCloud  \
+    --kittiRawIndex     /sw/cv/exp/kittiRawIndex/kittiRawIndex.h5   \
+    --pointCloudDir     /sw/cv/exp/kittiRawPointCloud 

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# 程序参数的说明：
+#  --kittiRawRoot: 在sw机器上存放KITTI Raw数据集的目录
+#  --drivePathList： 指向一个文本文件，其中每行是KITTI Raw数据集中一个驾次（drive）对应的相对路径，比如：
+#    ./Residential/2011_09_26/2011_09_26_drive_0019_sync
+#  --indexFile: KITTI Raw数据集的索引信息，具体内容参主文档。
+
+bin/generateKittiRawIndex  \
+    --kittiRawRoot     /sw/cv/dbase/kittiRaw         \
+    --drivePathList    inputData/drivePathList.txt   \
+    --indexFile        /sw/cv/exp/kittiRawIndex/kittiRawIndex.h5
+

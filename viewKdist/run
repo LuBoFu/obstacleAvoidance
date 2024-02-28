@@ -1,0 +1,2 @@
+# This program reads options from config/clusterByDBSCANConfig.txt
+bin/viewKdist  --clustersDir  /sw/cv/exp/clusters

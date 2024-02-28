@@ -1,0 +1,5 @@
+bin/depthToPointCloudMap  \
+    --depthH5Filename     /sw/cv/exp/depthGT/depth.h5   \
+    --pointCloudDir       /sw/cv/exp/pointCloud 
+    
+
